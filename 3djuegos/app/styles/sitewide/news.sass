@@ -1,0 +1,136 @@
+
+.page-other
+  display: flex
+  flex-wrap: wrap
+  background: white
+
+  &-news
+    width: 70%
+
+    @media (max-width: 929px)
+      width: 100%
+
+    &-title
+      width: 100%
+      height: 55px
+      background: #222222
+
+      &-h3
+        color: white
+        margin: 0
+        margin-left: 6%
+        line-height: 55px
+
+    &-item:last-child
+      border-bottom: 0
+
+    &-item
+      width: 95%
+      border-bottom: 1px solid silver
+      margin: 0 auto
+      height: 125px
+      position: relative
+      display: flex
+
+      @media (min-width: 1280px)
+        max-width: 630px
+
+      @media (max-width: 800px)
+        height: auto
+        margin-bottom: 7px
+        margin-top: 7px
+
+      &-link
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+      &-container
+        width: 25%
+
+        @media (max-width: 929px)
+          width: 15%
+
+        &-img
+          border-radius: 5px
+          margin-top: 20px
+          margin-left: 8px
+          max-height: 80px
+
+          @media (max-width: 929px)
+            margin-left: 0
+            max-height: 65px
+
+          @media (max-width: 800px)
+            max-height: 40px
+
+          @media (max-width: 500px)
+            max-height: 30px
+
+      &-text
+        width: 75%
+
+        @media (max-width: 649px)
+          width: 85%
+
+        &-title
+          font-size: 1em
+          margin: 15px 8px 2px 8px
+
+        &-body
+          color: #222222
+          font-size: .9em
+          margin: 4px 8px 2px 8px
+
+        &-time
+          font-size: .8em
+          color: silver
+          margin: 7px 8px 2px 8px
+
+
+  &-secondary
+    width: 30%
+
+    @media (max-width: 929px)
+      width: 100%
+
+    &-ads
+      width: 100%
+
+      @media (max-width: 929px)
+        display: none
+
+      &-img
+        max-width: 100%
+
+    &-buttons
+      background: #222222
+      height: auto
+      color: white
+
+      &-list
+        margin: 0
+        padding: 0
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 100%
+        text-align: center
+
+
+        &-item
+          list-style: none
+          width: 49.65%
+          height: 55px
+          //border: solid 0.1px silver
+          border-left: 1px solid black
+          border-bottom: 1px solid black
+          line-height: 55px
+          transition: background .4s
+          cursor: pointer
+
+
+          &:hover
+            background: rgba(192, 57, 43,1.0)
